@@ -1,6 +1,12 @@
 package com.byw.stock.house.track.client.listener;
 
+import com.byw.stock.house.track.api.HttpClientReferent;
+import com.byw.stock.house.track.api.IResponseListener;
+import com.byw.stock.house.track.utils.Util;
+import com.byw.stock.house.platform.log.PlatformLogger;
 import io.netty.util.CharsetUtil;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -8,13 +14,6 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.MathContext;
 import java.text.SimpleDateFormat;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import com.byw.stock.house.track.api.HttpClientReferent;
-import com.byw.stock.house.track.api.IResponseListener;
-import com.byw.stock.house.track.utils.Util;
 
 
 /**

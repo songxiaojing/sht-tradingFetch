@@ -1,18 +1,18 @@
 package com.byw.stock.house.track.client;
 
-import java.nio.charset.Charset;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.bson.Document;
-
 import com.byw.stock.house.track.api.HttpClientReferent;
 import com.byw.stock.house.track.api.common.HttpClient;
 import com.byw.stock.house.track.client.listener.StockCodeResponseListener;
 import com.byw.stock.house.track.services.MongoDBStorageService;
+import com.byw.stock.house.platform.log.PlatformLogger;
 import com.mongodb.MongoCommandException;
 import com.mongodb.MongoNamespace;
 import com.mongodb.client.MongoCollection;
+import org.bson.Document;
+
+import java.nio.charset.Charset;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 
 /**
@@ -70,8 +70,7 @@ public class C0_FetchAllStockCode extends AppClient {
         } catch (MongoCommandException mce) {
             _logger.exception(mce);
             //if target exists,drop it.
-            stock_code.drop();
-            //stock_code.dropCollection();
+            stock_code.dropCollection();
         }
     }
 

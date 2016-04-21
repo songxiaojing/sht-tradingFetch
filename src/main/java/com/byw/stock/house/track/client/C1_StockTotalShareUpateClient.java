@@ -1,13 +1,13 @@
 package com.byw.stock.house.track.client;
 
-import java.util.List;
-
-import org.bson.Document;
-
 import com.byw.stock.house.track.api.HttpClientReferent;
 import com.byw.stock.house.track.api.common.HttpClient;
 import com.byw.stock.house.track.client.listener.StockTotalShareResponseListener;
 import com.byw.stock.house.track.services.MongoDBStorageService;
+import com.byw.stock.house.platform.log.PlatformLogger;
+import org.bson.Document;
+
+import java.util.List;
 
 
 /**

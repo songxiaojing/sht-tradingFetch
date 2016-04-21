@@ -1,18 +1,17 @@
 package com.byw.stock.house.track.client;
 
+import com.byw.stock.house.track.api.HttpClientReferent;
+import com.byw.stock.house.track.api.common.HttpClient;
+import com.byw.stock.house.track.client.listener.StockRawDataResponseListener;
+import com.byw.stock.house.track.services.MongoDBStorageService;
+import com.byw.stock.house.platform.log.PlatformLogger;
 import io.netty.handler.codec.http.HttpHeaders;
+import org.bson.Document;
 
 import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-
-import org.bson.Document;
-
-import com.byw.stock.house.track.api.HttpClientReferent;
-import com.byw.stock.house.track.api.common.HttpClient;
-import com.byw.stock.house.track.client.listener.StockRawDataResponseListener;
-import com.byw.stock.house.track.services.MongoDBStorageService;
 
 
 /**

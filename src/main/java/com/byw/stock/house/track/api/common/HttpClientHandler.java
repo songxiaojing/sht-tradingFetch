@@ -1,5 +1,7 @@
 package com.byw.stock.house.track.api.common;
 
+import com.byw.stock.house.track.api.HttpClientReferent;
+import com.byw.stock.house.platform.log.PlatformLogger;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.PooledByteBufAllocator;
 import io.netty.channel.ChannelHandlerContext;
@@ -11,8 +13,6 @@ import io.netty.handler.codec.http.LastHttpContent;
 
 import java.util.Iterator;
 import java.util.Set;
-
-import com.byw.stock.house.track.api.HttpClientReferent;
 
 
 /**

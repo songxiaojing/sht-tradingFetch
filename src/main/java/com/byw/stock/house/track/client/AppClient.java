@@ -1,12 +1,13 @@
 package com.byw.stock.house.track.client;
 
 
+import com.byw.stock.house.platform.log.PlatformLoggerConfiguration;
+
 public abstract class AppClient {
 
     static {
-        //start the logger context for platform
         try {
-            PlatformContext.initPlatformLogger();
+            PlatformLoggerConfiguration.getInstance().initConfigurationForLogging("tss-core-cfg-logging.xml", null);
         } catch (Exception e) {
             e.printStackTrace();
         }

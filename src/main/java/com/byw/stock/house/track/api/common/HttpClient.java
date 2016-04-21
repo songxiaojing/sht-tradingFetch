@@ -1,5 +1,7 @@
 package com.byw.stock.house.track.api.common;
 
+import com.byw.stock.house.track.api.HttpClientReferent;
+import com.byw.stock.house.platform.log.PlatformLogger;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.Channel;
@@ -18,8 +20,6 @@ import io.netty.handler.ssl.util.InsecureTrustManagerFactory;
 import io.netty.util.CharsetUtil;
 
 import java.util.Iterator;
-
-import com.byw.stock.house.track.api.HttpClientReferent;
 
 
 /**

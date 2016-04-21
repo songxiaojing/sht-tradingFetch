@@ -1,6 +1,8 @@
 package com.byw.stock.house.track.api;
 
 
+import com.byw.stock.house.platform.log.PlatformLogger;
+
 public class SampleResponseListener implements IResponseListener {
 
     final private static PlatformLogger _logger = PlatformLogger.getLogger(SampleResponseListener.class);
