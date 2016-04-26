@@ -16,7 +16,7 @@ import com.mongodb.client.result.UpdateResult;
  * 总盘面，流通盘面.
  * 
  * @title StockInfoResponseListener
- * @package com.byw.stock.house.track.client.listener
+ * @package com.byw.stock.house.track.client.listeners
  * @author baiyanwei
  * @version
  * @date Feb 16, 2016

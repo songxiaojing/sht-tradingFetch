@@ -23,7 +23,7 @@ import java.text.SimpleDateFormat;
  * 总盘面，流通盘面.
  * 
  * @title StockCodeResponseListener
- * @package com.byw.stock.house.track.client.listener
+ * @package com.byw.stock.house.track.client.listeners
  * @author baiyanwei
  * @version
  * @date Feb 16, 2016

@@ -59,7 +59,7 @@ public class HttpClientReferent {
      */
     public HttpResponseStatus _responseStatus = null;
     /**
-     * listener for response.
+     * listeners for response.
      */
     public IResponseListener _responseListener;
     /**
