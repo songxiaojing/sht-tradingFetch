@@ -227,12 +227,12 @@ public class StockRawDataResponseListener implements IResponseListener {
                 break;
             }
         }
-        //if have no data ,return;
+        //if have no module ,return;
         if (responseStockName == null || responseStockDate == null || responseStockName.length() == 0 || responseStockDate.length() == 0) {
-            updateFetchResult("error", "Can not find data time or stock code from HTTP header,response code:" + hcr._responseStatus.code() + ", for " + this._stockCode + "/" + this._date);
+            updateFetchResult("error", "Can not find module time or stock code from HTTP header,response code:" + hcr._responseStatus.code() + ", for " + this._stockCode + "/" + this._date);
             return;
         }
-        _logger.info("Fetch data and size is " + text.length() + ", for " + responseStockDate);
+        _logger.info("Fetch module and size is " + text.length() + ", for " + responseStockDate);
         if (responseStockName.equalsIgnoreCase(this._stockCode) == false) {
             updateFetchResult("error", "Can not match stock code: response/" + responseStockName + ",target/" + _stockCode);
             return;

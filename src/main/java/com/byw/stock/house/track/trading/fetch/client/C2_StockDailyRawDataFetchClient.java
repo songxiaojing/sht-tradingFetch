@@ -53,7 +53,7 @@ public class C2_StockDailyRawDataFetchClient extends AppClient {
         this._mssCode = mssCode;
         this._startDay = startDay;
         this._mssFetchRecord = mssFetchRecord;
-        _logger.info("create stock raw data fetch ,time range:" + startDay.toString() + " with " + _days + " day");
+        _logger.info("create stock raw module fetch ,time range:" + startDay.toString() + " with " + _days + " day");
 
     }
 
@@ -83,7 +83,7 @@ public class C2_StockDailyRawDataFetchClient extends AppClient {
     @Override
     public void doClient() throws Exception {
 
-        _logger.info("start fetch raw data for ,time range:" + _startDay.toString() + " with " + _days + " day");
+        _logger.info("start fetch raw module for ,time range:" + _startDay.toString() + " with " + _days + " day");
         //
 
         List<Document> stockList = _mssCode.read("stock_code", new Document(), new Document(), 0, 10000);

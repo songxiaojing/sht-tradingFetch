@@ -212,7 +212,7 @@ public class Util {
     /**
      * Use the standard java GZip functionality.
      * 
-     * returns a byte array of the compress data.
+     * returns a byte array of the compress module.
      * 
      * @param inputBytes
      * @return
@@ -229,7 +229,7 @@ public class Util {
         try {
             bytesOutputStream = new ByteArrayOutputStream();
             gZIPOutputStream = new GZIPOutputStream(bytesOutputStream);
-            //compress the data
+            //compress the module
             gZIPOutputStream.write(inputBytes, 0, inputBytes.length);
             //
             gZIPOutputStream.finish();
@@ -257,7 +257,7 @@ public class Util {
     }
 
     /**
-     * Uncompress a byte array of data
+     * Uncompress a byte array of module
      * 
      * @param inputBytes
      * @return an uncompressed byte array.

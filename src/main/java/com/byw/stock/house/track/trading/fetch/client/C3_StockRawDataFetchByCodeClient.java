@@ -57,7 +57,7 @@ public class C3_StockRawDataFetchByCodeClient extends AppClient {
         this._startDay = startDay;
         this._stockCode = stockCode;
         this._mssFetchRecord = mssFetchRecord;
-        _logger.info("create stock raw data fetch for " + stockCode + ",time range:" + startDay.toString() + " with " + days + " day");
+        _logger.info("create stock raw module fetch for " + stockCode + ",time range:" + startDay.toString() + " with " + days + " day");
 
     }
 
@@ -87,7 +87,7 @@ public class C3_StockRawDataFetchByCodeClient extends AppClient {
     @Override
     public void doClient() throws Exception {
 
-        _logger.info("start fetch raw data for " + _stockCode + ",time range:" + _startDay.toString() + " with " + _days + " day");
+        _logger.info("start fetch raw module for " + _stockCode + ",time range:" + _startDay.toString() + " with " + _days + " day");
         //
         long startPoint = _startDay.getTime();
         for (int i = 0; i < _days; i++) {
